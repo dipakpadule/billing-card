@@ -3,6 +3,11 @@
     --text-color:var(--line-color);
     --btn-color:#fff;
 }
+* {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
 body{
     margin-top: 4rem;
     padding: 0;
@@ -47,7 +52,6 @@ body >div{
     right: 0;
 }
 
-
 /* box 1 */
 .box{
     width: 340.73px;
@@ -61,6 +65,67 @@ body >div{
     background: rgba(255, 255, 255, 1);
     margin-bottom: 20px;
 }
+
+#pair1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.25em;
+}
+#pair2 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.25em;
+}
+#pair3 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.25em;
+}
+.discount{
+    margin: 1px;
+    color: #000;
+    font-family: Metropolis;
+    font-size: 0.90381rem;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.discount >p{
+    margin: 1px;
+    text-align: right;
+}
+.discount>span{
+    color:var(--line-color);
+    font-family: Inter;
+    font-size: 0.79081rem;
+    font-weight: bold;
+    text-transform: capitalize;
+}
+.box-detail{
+    display: flex;
+    gap: 1em;
+}
+.box-item{
+    display: flex;
+    flex-direction: column;
+}
+.box-item > p{
+    margin: 1px;
+    color: #000;
+    font-family: Metropolis;
+    font-size: 0.90381rem;
+    font-weight: 400;
+}
+.box-item>span {
+    color: #000;
+    font-family: Metropolis;
+    font-size: 0.90381rem;
+    font-weight: bold;
+}
+/*  */
+
 
 /* Total and shipping */
 
@@ -108,4 +173,27 @@ color: #000;
     text-align: center;
     margin: 0 auto;
     display: block;
+}
+
+/* company */
+.company{
+    width: 340.73px;
+    text-align: right;
+    margin-top: -11px;
+}
+.company > sup{
+    color: #000;
+    font-family: Inter;
+    font-size: 0.45831rem;
+    font-weight: 300;
+}
+.company>p{
+    color: #000;
+    font-family: Inter;
+    font-size: 0.75rem;
+    font-style: italic;
+    font-weight: 300;
+}
+.company>p>span{
+    color:#F7CE2B;
 }
