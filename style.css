@@ -1,0 +1,111 @@
+:root{
+    --line-color:#007F61;
+    --text-color:var(--line-color);
+    --btn-color:#fff;
+}
+body{
+    margin-top: 4rem;
+    padding: 0;
+}
+body >div{
+    margin: 0 auto;
+}
+.heading-line:before {
+    content: " ";
+    display: block;
+    width: 94px;
+    height: 0.9px;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    background: var(--line-color);
+}
+
+.heading-line{
+    position: relative;
+}
+.heading-line {
+    position: relative;
+    max-width: 340px;
+    margin: 10px auto;
+    text-align: center;
+    color: var(--line-color);
+    font-family: Metropolis;
+    font-size: 1.12975rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+.heading-line:after {
+    content: " ";
+    width: 94px;
+    height: 0.9px;
+    background:var(--line-color);
+    display: block;
+    position: absolute;
+    top: 50%;
+    right: 0;
+}
+
+
+/* box 1 */
+.box{
+    width: 340.73px;
+    height: 74.11px;
+    -ms-border-radius: 3.62px;
+    -o-border-radius: 3.62px;
+    -moz-border-radius: 3.62px;
+    -webkit-border-radius: 3.62px;
+    border-radius: 3.62px;
+    border: 0.9px solid #c8c8c8;
+    background: rgba(255, 255, 255, 1);
+    margin-bottom: 20px;
+}
+
+/* Total and shipping */
+
+.total-ship{
+    width: 21.3125rem;
+    height: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+#shipping{
+    color:var(--text-color);
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-weight: bold;
+    opacity: 0.6;
+}
+#totalsum{
+color: #000;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+#totalsum span{
+    color: #000;
+    font-family: Inter;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: bold;
+    line-height: normal;
+}
+
+/* Addto cart */
+.addtocart{
+    width: 21.3125rem;
+    height: 3rem;
+    border: none;
+    border-radius: 0.25rem 0.25rem 0.25rem 0.25rem;
+    background: var(--line-color);
+    color: var(--btn-color);
+    font-family: Inter;
+    font-size: 1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+}
